@@ -1,6 +1,6 @@
 import React from 'react'
 import leftImage from "./../assets/leftimage.png"
-import igLogo from "./../assets/iglogo.png"
+import igLogo from "./../assets/iglogo1.png"
 import screenshot1 from "./../assets/screenshot1.png"
 import screenshot2 from "./../assets/screenshot2.png"
 import screenshot3 from "./../assets/screenshot3.png"
@@ -12,7 +12,7 @@ function Landingpage() {
   const settings = {
     dots: false,
     infinite: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 500,
     autoplay: true,
     fade: true,
 
@@ -24,20 +24,16 @@ function Landingpage() {
 
         <div className="col-md-6 d-none d-md-block">
           <img src={leftImage} alt="" className='position-relative leftimage' />
-          <div className="carousel position-relative">
-          <div >
-            <Slider {...settings} className='inner'>
+            <Slider {...settings} className=''>
               <img src={screenshot1} alt="" />
               <img src={screenshot2} alt="" />
               <img src={screenshot3} alt="" />
               <img src={screenshot4} alt="" />
             </Slider>
-          </div>
-          </div>
         </div>
 
         <div className="col-12 col-md-6">
-          <img src={igLogo} alt="" className='d-block m-auto' />
+          <img src={igLogo} style={{width: "50%", padding: "2rem"}} alt="" className='d-block m-auto' />
 
           <input type="text" placeholder='phone, phonumber and email'/>
 

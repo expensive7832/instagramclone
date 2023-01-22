@@ -50,11 +50,19 @@
     box-shadow: 0 0 1px #999990;
     background-color: #fff;
     margin: 3rem 0;
+    max-width: 25%;
+}
+.landing .col-md-6:first-child{
+    position: relative;
+    min-width: 100vh;
+    background-color: #fff;
+    margin: 3rem 0;
+    max-width: 25%;
 }
 
 .carousel .inner{
     position: absolute;
-    top:50%;
+    top:20%;
     left: 50%;
     z-index: 1000;
     
@@ -63,4 +71,11 @@
 .carousel .inner img{
     max-width: 5rem;
     object-fit: contain;
+}
+
+@media (max-width:768px) {
+    .landing .col-md-6:last-child{
+       
+        max-width: 75%;
+    }
 }
