@@ -1,0 +1,66 @@
+.landing{
+    width: 100vw;
+    height: 100vh;
+}
+.landing .leftimage{
+    width: 100%;
+    padding: 3rem ;
+    
+    
+}
+
+.landing input{
+    width: 100%;
+    padding: 1rem;
+}
+
+.landing .pwd{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: #E8F0FE;
+}
+
+.landing .pwd input{
+    outline: none;
+    border: none;
+}
+.landing .pwd small{
+    background-color: #E8F0FE;
+    font-weight: bold;
+}
+
+.landing .col-12 p::before{
+    content: "___________"
+
+}
+.landing .col-12 p::after{
+    content: "___________"
+
+}
+
+.landing .col-md-6{
+    flex: 1;
+}
+
+.landing .col-md-6:last-child{
+    position: relative;
+    box-shadow: 0 0 1px #999990;
+    background-color: #fff;
+    margin: 3rem 0;
+}
+
+.carousel .inner{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    z-index: 1000;
+    
+}
+
+.carousel .inner img{
+    max-width: 5rem;
+    object-fit: contain;
+}
