@@ -20,19 +20,22 @@ function Landingpage() {
 
   return (
     <div className="landing container">
-      <div className="row justify-content-center align-items-center">
+      <div className="row d-flex justify-content-center align-items-center">
 
-        <div className="col-md-6 d-none d-md-block">
+        <div className="col-md-6 d-none d-md-block ">
           <img src={leftImage} alt="" className='position-relative leftimage' />
-            <Slider {...settings} className=''>
-              <img src={screenshot1} alt="" />
-              <img src={screenshot2} alt="" />
-              <img src={screenshot3} alt="" />
-              <img src={screenshot4} alt="" />
-            </Slider>
+
+          <div className='position-absolute d-block text-center top-50 start-50 translate-middle' style={{
+          zIndex: 1000
+          }}>
+            
+            <img src={screenshot4} alt=""  className='ms-5' style={{width: "60%", height: "100%", objectFit: "cover"}}/>
+            
+          </div>
+            
         </div>
 
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 m-auto">
           <img src={igLogo} style={{width: "50%", padding: "2rem"}} alt="" className='d-block m-auto' />
 
           <input type="text" placeholder='phone, phonumber and email'/>

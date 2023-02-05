@@ -4,7 +4,8 @@
 }
 .landing .leftimage{
     width: 100%;
-    padding: 3rem ;
+    object-fit: contain;
+    height: 70vh;
     
     
 }
@@ -62,14 +63,11 @@
 
 .carousel .inner{
     position: absolute;
-    top:20%;
-    left: 50%;
-    z-index: 1000;
     
 }
 
 .carousel .inner img{
-    max-width: 5rem;
+    max-width: 2rem;
     object-fit: contain;
 }
 
@@ -79,3 +77,4 @@
         max-width: 75%;
     }
 }
+
