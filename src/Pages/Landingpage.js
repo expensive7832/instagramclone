@@ -6,6 +6,7 @@ import screenshot2 from "./../assets/screenshot2.png"
 import screenshot3 from "./../assets/screenshot3.png"
 import screenshot4 from "./../assets/screenshot4.png"
 import Slider from "react-slick";
+import { Link } from 'react-router-dom'
 
 function Landingpage() {
 
@@ -47,6 +48,8 @@ function Landingpage() {
 
           <button className='btn btn-md btn-primary w-100'>login</button>
           <p className='text-center'>OR</p>
+
+          <Link to="/register" className='btn btn-md btn-primary w-100'>Signup</Link>
         </div>
 
       
